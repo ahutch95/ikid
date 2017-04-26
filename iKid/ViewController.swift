@@ -15,6 +15,15 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    @IBAction func goodJokes(_ sender: UIBarButtonItem) {
+        JokeViewController.
+    }
+    @IBAction func antiJokes(_ sender: UIBarButtonItem) {
+    }
+    @IBAction func animalJokes(_ sender: UIBarButtonItem) {
+    }
+    @IBAction func dadJokes(_ sender: UIBarButtonItem) {
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
