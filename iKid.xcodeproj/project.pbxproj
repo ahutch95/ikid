@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D31275B1EB3EBDC000DBB38 /* JokeDictionaries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D31275A1EB3EBDC000DBB38 /* JokeDictionaries.swift */; };
 		9D50BEDC1EB03B7A0083A2FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D50BEDB1EB03B7A0083A2FE /* AppDelegate.swift */; };
 		9D50BEDE1EB03B7A0083A2FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D50BEDD1EB03B7A0083A2FE /* ViewController.swift */; };
 		9D50BEE11EB03B7A0083A2FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D50BEDF1EB03B7A0083A2FE /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D31275A1EB3EBDC000DBB38 /* JokeDictionaries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeDictionaries.swift; sourceTree = "<group>"; };
 		9D50BED81EB03B7A0083A2FE /* iKid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iKid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D50BEDB1EB03B7A0083A2FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D50BEDD1EB03B7A0083A2FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				9D50BEDB1EB03B7A0083A2FE /* AppDelegate.swift */,
 				9D50BEDD1EB03B7A0083A2FE /* ViewController.swift */,
+				9D31275A1EB3EBDC000DBB38 /* JokeDictionaries.swift */,
 				9D50BEDF1EB03B7A0083A2FE /* Main.storyboard */,
 				9D50BEE21EB03B7A0083A2FE /* Assets.xcassets */,
 				9D50BEE41EB03B7A0083A2FE /* LaunchScreen.storyboard */,
@@ -190,6 +193,9 @@
 		9D50BED01EB03B7A0083A2FE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					goodJoke,
+				);
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Austin Hutchinson";
@@ -262,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D31275B1EB3EBDC000DBB38 /* JokeDictionaries.swift in Sources */,
 				9D50BEDE1EB03B7A0083A2FE /* ViewController.swift in Sources */,
 				9D50BEDC1EB03B7A0083A2FE /* AppDelegate.swift in Sources */,
 				9D50BF0E1EB03FED0083A2FE /* JokeViewController.swift in Sources */,
@@ -511,6 +518,7 @@
 				9D50BF021EB03B7A0083A2FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D50BF031EB03B7A0083A2FE /* Build configuration list for PBXNativeTarget "iKidTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +527,7 @@
 				9D50BF051EB03B7A0083A2FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D50BF061EB03B7A0083A2FE /* Build configuration list for PBXNativeTarget "iKidUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +536,7 @@
 				9D50BF081EB03B7A0083A2FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

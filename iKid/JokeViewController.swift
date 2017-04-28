@@ -13,9 +13,14 @@ class JokeViewController: UIViewController {
     @IBOutlet weak var jokeText: UILabel!
     @IBOutlet weak var answerText: UILabel!
 
+
+    
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        jokeText.text = JokeDictionaries.joke
+        answerText.text = JokeDictionaries.answer
         // Do any additional setup after loading the view.
     }
 
@@ -24,10 +29,8 @@ class JokeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func updateLabel(_ jokeTextStr: String,_ answerTextStr: String){
-        self.jokeText.text = jokeTextStr
-        self.answerText.text = answerTextStr
-    }
+
+
     
     @IBAction func toggleAnswer(_ sender: UIButton) {
         answerText.isHidden = !answerText.isHidden

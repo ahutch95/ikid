@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,57 +22,70 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U6K-Z3-lzn">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U6K-Z3-lzn">
+                                <rect key="frame" x="0.0" y="30" width="375" height="44"/>
                                 <items>
                                     <barButtonItem title="Good Jokes" id="pYe-ha-lvq">
                                         <connections>
-                                            <action selector="goodJokes:" destination="BYZ-38-t0r" id="7ty-Rx-rPA"/>
-                                            <segue destination="KlW-IO-y8r" kind="show" id="duA-HR-8gN"/>
+                                            <action selector="loadJoke:" destination="BYZ-38-t0r" id="VIN-Xe-ek8"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rWO-3u-dAF">
-                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rWO-3u-dAF">
+                                <rect key="frame" x="0.0" y="84" width="375" height="44"/>
                                 <items>
                                     <barButtonItem title="Anti-Jokes" id="b0v-z4-aU8">
                                         <connections>
-                                            <action selector="antiJokes:" destination="BYZ-38-t0r" id="DOd-tp-lKW"/>
-                                            <segue destination="KlW-IO-y8r" kind="show" id="fkS-S2-d5g"/>
+                                            <action selector="loadJoke:" destination="BYZ-38-t0r" id="mMn-ky-Wiu"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="brB-Yp-rSw">
-                                <rect key="frame" x="0.0" y="116" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="brB-Yp-rSw">
+                                <rect key="frame" x="0.0" y="138" width="375" height="44"/>
                                 <items>
                                     <barButtonItem title="Animal Puns" id="O9T-dZ-1jh">
                                         <connections>
-                                            <action selector="animalJokes:" destination="BYZ-38-t0r" id="2Ix-zL-0k2"/>
-                                            <segue destination="KlW-IO-y8r" kind="show" id="wxV-oa-5Gn"/>
+                                            <action selector="loadJoke:" destination="BYZ-38-t0r" id="FKd-nJ-8nQ"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GPh-wP-Tzt">
-                                <rect key="frame" x="0.0" y="160" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GPh-wP-Tzt">
+                                <rect key="frame" x="0.0" y="192" width="375" height="44"/>
                                 <items>
                                     <barButtonItem title="Dad Jokes" id="dcu-Pt-RyL">
                                         <connections>
-                                            <action selector="dadJokes:" destination="BYZ-38-t0r" id="965-OE-cof"/>
-                                            <segue destination="KlW-IO-y8r" kind="show" id="I8c-Qj-7PK"/>
+                                            <action selector="loadJoke:" destination="BYZ-38-t0r" id="aZo-dM-4DF"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="brB-Yp-rSw" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="7dW-g6-ak2"/>
+                            <constraint firstItem="rWO-3u-dAF" firstAttribute="top" secondItem="U6K-Z3-lzn" secondAttribute="bottom" constant="10" id="G1e-ZG-FLs"/>
+                            <constraint firstItem="GPh-wP-Tzt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JHm-XR-TFI"/>
+                            <constraint firstItem="U6K-Z3-lzn" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Msa-ro-Fg9"/>
+                            <constraint firstItem="brB-Yp-rSw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QEl-hH-Ix2"/>
+                            <constraint firstItem="U6K-Z3-lzn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="U4N-HU-yi1"/>
+                            <constraint firstItem="brB-Yp-rSw" firstAttribute="top" secondItem="rWO-3u-dAF" secondAttribute="bottom" constant="10" id="VtS-Aq-4uw"/>
+                            <constraint firstItem="rWO-3u-dAF" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="XUe-Ls-6pB"/>
+                            <constraint firstItem="rWO-3u-dAF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ddH-1G-TGd"/>
+                            <constraint firstItem="GPh-wP-Tzt" firstAttribute="top" secondItem="brB-Yp-rSw" secondAttribute="bottom" constant="10" id="goX-Ke-mZ6"/>
+                            <constraint firstItem="GPh-wP-Tzt" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="qlG-ox-lH3"/>
+                            <constraint firstItem="U6K-Z3-lzn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wCj-xO-4Dt"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="animalJoke" destination="O9T-dZ-1jh" id="cao-Ar-325"/>
+                        <outlet property="antiJoke" destination="b0v-z4-aU8" id="lmI-xC-Osk"/>
+                        <outlet property="dadJoke" destination="dcu-Pt-RyL" id="REY-Q3-75D"/>
+                        <outlet property="goodJoke" destination="pYe-ha-lvq" id="Ogl-d0-ULA"/>
+                        <segue destination="KlW-IO-y8r" kind="show" identifier="showJoke" id="nJK-KF-T98"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -88,30 +102,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTy-Gf-Gs9">
-                                <rect key="frame" x="164" y="617" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTy-Gf-Gs9">
+                                <rect key="frame" x="143" y="617" width="88" height="30"/>
+                                <state key="normal" title="View Answer"/>
                                 <connections>
                                     <action selector="toggleAnswer:" destination="KlW-IO-y8r" eventType="touchUpInside" id="IXX-1g-TVQ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFE-ZM-xfq">
-                                <rect key="frame" x="164" y="311" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFE-ZM-xfq">
+                                <rect key="frame" x="166" y="311" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QcC-N6-vQx">
-                                <rect key="frame" x="164" y="207" width="42" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUD-Ag-Lny">
+                                <rect key="frame" x="6" y="20" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="kax-oO-fZI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QcC-N6-vQx">
+                                <rect key="frame" x="-8" y="118" width="375" height="167"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QcC-N6-vQx" firstAttribute="width" secondItem="HvH-hE-8ff" secondAttribute="width" multiplier="8/9" id="1PA-cE-gIq"/>
+                            <constraint firstItem="QTy-Gf-Gs9" firstAttribute="centerX" secondItem="aFE-ZM-xfq" secondAttribute="centerX" id="6Gi-24-9ds"/>
+                            <constraint firstItem="aFE-ZM-xfq" firstAttribute="width" secondItem="HvH-hE-8ff" secondAttribute="width" multiplier="8/9" id="8aS-iD-nrY"/>
+                            <constraint firstItem="QcC-N6-vQx" firstAttribute="height" secondItem="HvH-hE-8ff" secondAttribute="height" multiplier="1/6" id="9DY-Tr-Ems"/>
+                            <constraint firstItem="aFE-ZM-xfq" firstAttribute="top" secondItem="QcC-N6-vQx" secondAttribute="bottom" constant="10" id="TTP-sz-eRX"/>
+                            <constraint firstItem="aFE-ZM-xfq" firstAttribute="height" secondItem="HvH-hE-8ff" secondAttribute="height" multiplier="1/4" id="ZB0-9q-5lY"/>
+                            <constraint firstAttribute="bottom" secondItem="QTy-Gf-Gs9" secondAttribute="bottom" constant="20" symbolic="YES" id="epL-Pv-4Xn"/>
+                            <constraint firstItem="QcC-N6-vQx" firstAttribute="top" secondItem="HvH-hE-8ff" secondAttribute="top" multiplier="1/3" constant="20" symbolic="YES" id="fQW-KH-glq"/>
+                            <constraint firstItem="aFE-ZM-xfq" firstAttribute="centerX" secondItem="HvH-hE-8ff" secondAttribute="centerX" id="qiJ-O4-0Yb"/>
+                            <constraint firstItem="QcC-N6-vQx" firstAttribute="centerX" secondItem="HvH-hE-8ff" secondAttribute="centerX" id="t6Y-Rb-ACr"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="answerText" destination="aFE-ZM-xfq" id="9PF-s4-dvP"/>
@@ -120,10 +151,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3PC-8e-KWh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="896.79999999999995" y="100.29985007496252"/>
+            <point key="canvasLocation" x="903" y="114"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="duA-HR-8gN"/>
-    </inferredMetricsTieBreakers>
 </document>
